@@ -9,13 +9,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="background-wrapper">
+            <img src="https://images.pexels.com/photos/2148217/pexels-photo-2148217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="">
+            <img src="https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="">
+        </div>
+        <div class="topbar">
+            <div class="topbar-left">
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                                <img
+                                    src="https://www.canva.com/learn/wp-content/uploads/2018/11/best-free-stock-photos.jpg">
+                            </div>
+                            <a href="#user"><img class="circle" src="images/Avatar.jpg"></a>
+                            <a href="#name"><span class="white-text name">Nguyễn Duy Quang</span></a>
+                            <a href="#email"><span class="white-text email">Nguyenduyquang93@@gmail.com</span></a>
+                        </div>
+                    </li>
+                    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                    <li><a href="#!">Second Link</a></li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a class="subheader">Subheader</a></li>
+                    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+            </div>
+            <div class="topbar-right">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-github-square"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="text">
+                <p id="name">Nguyễn Duy Quang</p>
+                <div id="slide">
+                    <div class="slide-item">
+                        <p>Front-End Developer</p>
+                        <p>HTML, CSS, SASS, Javascript, Bootstrap, Jquery, MaterializeCss, Nodejs...</p>
+                    </div>
+                    <div class="slide-item">
+                        <p>Knowledge and Favorite</p>
+                        <p>IT Desk help, Techlonogy, Web... - Traveling, Moba Game, Cuisine...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-info">
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Aboutme</a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4>Modal Header</h4>
+                    <p>A bunch of text</p>
+                </div>
+            </div>
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Skills & Exp</a>
+
+            <!-- Modal Structure -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h3>Skills and Experience</h3>
+                    <ul>
+                        <p><i class="fas fa-check-circle"></i> Từng học 4 năm tại ĐHBKHN - Học viên của trung tâm dạy lập tình 1-1 Học Với Chuyên Gia</p>
+                        <li>- Có kiến thức về tin học văn phòng, phần cứng, phần mềm, mạng máy tính.</li>
+                        <li>- Tiếng Anh cơ bản.</li>
+                        <li>- Tương đối thành thạo HTML/CSS/JS.</li>
+                        <li>- Sử dụng được Preprocessor Css: SCSS.</li>
+                        <li>- Thao tác cơ bản với Git</li>
+                        <li>- Biết cách dùngmột số Library/Framwork/Plugin : Bootstrap, Jquery, MaterializeCss, Wowjs, Owl-carousel...</li>
+                        <li>- Đang tiếp tục nghiêm cứu, học thêm về JS nâng cao, Nodejs và Reactjs.</li>
+                    </ul>
+                    <ul>
+                        <p><i class="fas fa-check-circle"></i>Công việc và định hướng</p>
+                        <li>- Từng làm Phụ kho + IT Desk help cơ bản cty TNHH An Minh.</li>
+                        <li>- Muốn thay đổi công việc, được học tập và làm công việc liên quan đến ngành CNTT như đã
+                            từng mơ ước!</li>
+                        <li>- Trở thành một Front-end Developer chính thức và xa hơn nữa.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-<!-- <Script> -->
+    <!-- <Script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="main.js"></script>
