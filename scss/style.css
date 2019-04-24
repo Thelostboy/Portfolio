@@ -120,14 +120,6 @@ body {
   left: 50%;
 }
 
-.container-fluid .modal-info .modal {
-  background-color: #e2fcef;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  max-height: 85%;
-}
-
 .container-fluid .modal-info .modal-trigger {
   position: relative;
   margin: 200px 20px 0 20px;
@@ -140,6 +132,15 @@ body {
           box-shadow: 0 0 5px white;
 }
 
+.container-fluid .modal-info .modal {
+  background-color: #e2fcef;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  max-height: 85%;
+  width: 60%;
+}
+
 .container-fluid .modal-info .modal-trigger:hover {
   color: #26A69A;
   background-color: #FDFDFD;
@@ -147,17 +148,11 @@ body {
 
 .container-fluid .modal-info .modal-content {
   color: #41393e;
-  padding-bottom: 0;
+  padding: 0;
 }
 
-.container-fluid .modal-info .modal-content .main-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: tomato;
+.container-fluid .modal-info .modal-content .row {
+  padding: 20px;
 }
 
 .container-fluid .modal-info .modal-content .main-info .col {
@@ -179,17 +174,43 @@ body {
 }
 
 .container-fluid .modal-info .modal-content h3 {
-  color: tomato;
+  color: #4267B2;
   text-align: center;
+}
+
+.container-fluid .modal-info .modal-content ul {
+  padding: 10px;
 }
 
 .container-fluid .modal-info .modal-content ul p {
   font-size: 1.2rem;
-  color: #4267B2;
+  color: tomato;
 }
 
 .container-fluid .modal-info .modal-content ul li {
-  margin: 10px 0;
+  margin: 10px;
+  padding: 0 10px;
+}
+
+.container-fluid .modal-info .modal-content .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: tomato;
+  height: 40px;
+}
+
+.container-fluid .modal-info .modal-content .main-footer i {
+  color: #FDFDFD;
+  font-size: 2rem;
+  padding: 5px 15px;
+}
+
+.container-fluid .modal-info .modal-content .main-footer i:hover {
+  color: #4267B2;
 }
 
 @keyframes imgFade {

@@ -1,4 +1,9 @@
 $white: #FDFDFD;
+$blue: #4267B2;
+$tomato: rgb(255, 99, 71);
+$light-green: #2afc98;
+$dark-green: #26A69A;
+$white-green: #e2fcef;
 
 p {
     margin: 0;
@@ -67,7 +72,7 @@ body {
                 }
 
                 i:hover {
-                    color: #2afc98;
+                    color: $light-green;
                 }
             }
         }
@@ -79,7 +84,7 @@ body {
         }
 
         i:hover {
-            color: #4267B2;
+            color: $blue;
         }
 
     }
@@ -98,7 +103,7 @@ body {
         }
 
         #slide {
-            color: #2afc98;
+            color: $light-green;
             font-size: 2.2rem;
 
             .slide-item {
@@ -135,14 +140,6 @@ body {
         position: relative;
         left: 50%;
 
-
-        .modal {
-            background-color: #e2fcef;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-            max-height: 85%;
-        }
-
         .modal-trigger {
             position: relative;
             margin: 200px 20px 0 20px;
@@ -151,22 +148,30 @@ body {
             transform: translateX(-120%);
             font-size: 1.2rem;
             box-shadow: 0 0 5px rgb(255, 255, 255.6);
-
         }
 
+        .modal {
+            background-color: $white-green;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            max-height: 85%;
+            width: 60%;
+        }
+
+
         .modal-trigger:hover {
-            color: #26A69A;
+            color: $dark-green;
             background-color: $white;
         }
 
+        //Modal1
+
         .modal-content {
             color: #41393e;
-            padding-bottom: 0;
+            padding: 0;
 
-            .main-footer {
-                display: flex;
-                justify-content: center;
-                background-color: tomato;
+            .row {
+                padding: 20px;
             }
 
             .main-info {
@@ -190,19 +195,45 @@ body {
                 border-radius: 50%;
             }
 
+            // Modal2
+
             h3 {
-                color: tomato;
+                color: $blue;
                 text-align: center;
             }
 
-            ul p {
-                font-size: 1.2rem;
-                color: #4267B2
+            ul {
+                padding: 10px;
+
+                p {
+                    font-size: 1.2rem;
+                    color: $tomato;
+                }
+
+                li {
+                    margin: 10px;
+                    padding: 0 10px;
+                }
             }
 
-            ul li {
-                margin: 10px 0;
+            .main-footer {
+                display: flex;
+                justify-content: center;
+                background-color: $tomato;
+                height: 40px;
+
+                i {
+                    color: $white;
+                    font-size: 2rem;
+                    padding: 5px 15px;
+                }
+
+                i:hover {
+                    color: $blue;
+                }
             }
+
+
         }
     }
 
