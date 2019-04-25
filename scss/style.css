@@ -45,8 +45,13 @@ body {
           justify-content: space-between;
 }
 
-.container-fluid .topbar .topbar-left .sidenav .user-view .background img {
-  width: 100%;
+.container-fluid .topbar .topbar-left .sidenav .waves-effect {
+  color: #4267B2;
+  font-size: 1.2rem;
+}
+
+.container-fluid .topbar .topbar-left .sidenav .waves-effect i {
+  color: #4267B2;
 }
 
 .container-fluid .topbar .topbar-left .sidenav-trigger i {
@@ -115,9 +120,8 @@ body {
 }
 
 .container-fluid .modal-info {
-  margin: 0 auto;
   position: relative;
-  left: 50%;
+  text-align: center;
 }
 
 .container-fluid .modal-info .modal-trigger {
@@ -125,8 +129,6 @@ body {
   margin: 200px 20px 0 20px;
   width: 150px;
   height: 40px;
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
   font-size: 1.2rem;
   -webkit-box-shadow: 0 0 5px white;
           box-shadow: 0 0 5px white;
