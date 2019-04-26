@@ -54,11 +54,12 @@ body {
         justify-content: space-between;
 
         .topbar-left {
-            .sidenav {    
-                .waves-effect{
+            .sidenav {
+                .waves-effect {
                     color: #4267B2;
                     font-size: 1.2rem;
-                    i{
+
+                    i {
                         color: #4267B2;
                     }
                 }
@@ -135,18 +136,22 @@ body {
 
     // Info
 
-    .modal-info {
+    .modal-info:not(.modal) {
         position: relative;
-        text-align: center;
 
-        .modal-trigger {
-            position: relative;
-            margin: 200px 20px 0 20px;
-            width: 150px;
-            height: 40px;
-            font-size: 1.2rem;
-            box-shadow: 0 0 5px rgb(255, 255, 255.6);
+        .trigger-list {
+            text-align: center;
+
+            .modal-trigger {
+                position: relative;
+                margin: 200px 20px 0 20px;
+                width: 150px;
+                height: 40px;
+                font-size: 1.2rem;
+                box-shadow: 0 0 5px rgb(255, 255, 255.6);
+            }
         }
+
 
         .modal {
             background-color: $white-green;
